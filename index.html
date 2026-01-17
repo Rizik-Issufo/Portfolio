@@ -18,20 +18,24 @@
     
   </head>
   <body>
-<!-- fsacyubhuakasnciundwoncilwhsdcukbhsdhclbsdchzkhbwdsczoibwusdzxcbeuwkdxzbkudsxcbz -->
-<!-- fsacyubhuakasnciundwoncilwhsdcukbhsdhclbsdchzkhbwdsczoibwusdzxcbeuwkdxzbkudsxcbz -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top pl-5">
-  <h2 class=""><a class="navbar-brand text-white align-items-center " href="#"> ROI Portfólio</a></h2>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon h3"></span>
-  </button>
+    <div class="loading" id="loading-screen" style="display: none;">
+      <h1>Carregando ....</h1>
+    </div>
+    <div class="content" id="content">
 
-  <div class="collapse navbar-collapse ps-2" id="navbarTogglerDemo02">
-    <ul class="navbar-nav col-auto list-unstyled ps-4 text-center">
-      <li class="nav-item ps-4 active">
-        <h4><a class="nav-link text-white" href="#head">Home <span class="sr-only">(current)</span></a></h4>
-      </li>
-      <li class="nav-item ps-2 ">
+      <!-- Begining of the body side -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top pl-5">
+        <h2 class=""><a class="navbar-brand text-white align-items-center " href="#"> ROI Portfólio</a></h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon h3"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse ps-2" id="navbarTogglerDemo02">
+        <ul class="navbar-nav col-auto list-unstyled ps-4 text-center">
+          <li class="nav-item ps-4 active">
+            <h4><a class="nav-link text-white" href="#head">Home <span class="sr-only">(current)</span></a></h4>
+          </li>
+          <li class="nav-item ps-2 ">
         <h4><a class="nav-link text-white" href="#formacoes-container">Formações</a></h4>
       </li>
       <li class="nav-item ps-4 ">
@@ -45,8 +49,15 @@
       </li>
     </ul>
     <ul class="navbar col-auto list-unstyled  ml-auto text-center">
-      <li class="nav-item">
+      <li class="nav-item pe-1">
         <h4><a class="nav-link text-white" href="#contact">Comentarios</a></h4>
+      </li>
+      <li class="nav-item pe-1">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+          <i class="bi bi-sun" style="color: #fbbf24"></i>
+          <i class="bi bi-moon" style="color: #818cf8"></i>
+        </button>
       </li>
     </ul>
     
@@ -92,28 +103,40 @@
     <!-- ===================== head X -->
 
     <!-- ???????????????????????????????????????????????????????????????????????????????????????????????? -->
+    <div class="certificates bg-dark" id="formacoes-container">
+      <h3 class="p-1 title text-center text-white">Formações</h3>
+      <div class="carousel-courses center">
+        <div class="group">
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_gestão.jpg" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certifcate_hacking.png" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_react_native.png" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_java.png" alt="">
+          </div>
+      </div>
+      <div aria-hidden="true" class="group">
+        <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_AI.jpg" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_Arduino.jpg" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_gestão.jpg" alt="">
+          </div>
+          <div class="card-carousel">
+            <img src="./public/images/certificates/certificate_java.png" alt="">
+          </div>
+      </div>
+    </div>
+  </div> 
     <!-- ???????????????????????????????????????????????????????????????????????????????????????????????? -->
-    <div class="formacoes-container p-1 border-1" id="formacoes-container">
-      <div class="formacoes d-flex p-1">
-        <div class="duas-formacoes d-md-flex p-1">
-          <div class="formacao-1 p-1">
-            <img class="img-forma" src="./public/images/certificates/certifcate_hacking.png" alt="">
-          </div>
-          <div class="formacao-2 p-1">
-            <img class="img-forma" src="./public/images/certificates/certificate_react_native.png" alt="">
-          </div>
-        </div>
-        <div class="duas-formacoes d-sm-flex d-md-flex p-1">
-        <div class="formacao-3 p-1">
-          <img class="img-forma" src="./public/images/certificates/certifcate_hacking.png" alt="">
-        </div>
-        <div class="formacao-4 p-1">
-          <img class="img-forma" src="./public/images/certificates/certificate_react_native.png" alt="">
-        </div>
-        </div>
-        </div>
-     </div>
-
     <!-- ???????????????????????????????????????????????????????????????????????????????????????????????? -->
     <!-- ???????????????????????????????????????????????????????????????????????????????????????????????? -->
 
@@ -123,7 +146,7 @@
       <h3 class="p-1 title">Projetos</h3>
       <div id="project-container" class="container">
         <div class="row mt-1">
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card rounded shadow">
               <img src="./public/images/img_projects/management.jpg" class="projectImage " alt="image">
               <div class="card-body">
@@ -133,7 +156,7 @@
               </div>
             </div>
           </div>
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card rounded shadow">
               <img src="./public/images/img_projects/multifuncional.png" class="projectImage" alt="image">
               <div class="card-body">
@@ -143,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card  rounded shadow">
               <img src="./public/images/img_projects/rastreio.jpg" class="projectImage" alt="image">
               <div class="card-body">
@@ -153,10 +176,7 @@
               </div>
             </div>
           </div>
-        </div>
-    
-        <div class="row mb-2">
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card rounded shadow">
               <img src="./public/images/img_projects/CalculatorImg.jpg" class="projectImage" alt="image">
               <div class="card-body">
@@ -166,7 +186,7 @@
               </div>
             </div>
           </div>
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card rounded shadow">
               <img src="./public/images/img_projects/sps.png" class="projectImage" alt="image">
               <div class="card-body">
@@ -176,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="pt-1 pb-2 col-md-4">
+          <div class="pt-2 pb-2 col-md-4">
             <div class="projectcontain card rounded shadow">
               <img src="./public/images/img_projects/RoiAcessorios.jpg" class="projectImage" alt="image">
               <div class="card-body">
@@ -186,8 +206,21 @@
               </div>
             </div>
           </div>
+          <div class="pt-2 pb-2 col-md-4">
+            <div class="projectcontain card  rounded shadow">
+              <img src="./public/images/img_projects/rastreio.jpg" class="projectImage" alt="image">
+              <div class="card-body">
+                <h3 class="card-title text-uppercase">SERVIÇO DE DEDUPLICAÇÃO</h3>
+                <h5 class="card-text pb-3">Serviço java para identificação de dados duplicados com foco na redução do consumo de largura de banda.</h5>
+                <button class="btn btn-primary rounded-1"><a class="btn btn-primary" href="github/rizik-issufo">Detalhes</a></button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+        </div>
+        
+        <!-- <div class="row mb-2">
+      </div> -->
     </div>
     <!-- Banner ============================ -->
     <!-- ============================== Banner carroussell  ==============================================- -->
@@ -382,41 +415,7 @@
     <h5 class="sucessComment" id="sucessComment"></h5>
     <button id="submit" class="btn btn-lg btn-primary submit">Enviar</button>
   </form>
-
-
-  <!-- <div id="popup-info" class="popup-info">
-    <div class="popup-content">
-      <h2 class="head-popup">
-        Informação importante
-      </h2>
-      <p class="text">Esta funcionalidade encontra-se Indisponivel. Brevemente estará disponivel </p>
-    </div>
-  </div> -->
 </section>
-<!-- <section class="border-top p-3">
-
-  <div class="rollup-container certificados">
-    <div class="rollup-contain">
-      <div class="certificado-item">
-        <img src="./public/images/certificate1" class="image" alt="">
-        <h3>Certificado de participacao Hacking</h3>
-        <p>participacao em: 2023</p>
-      </div>
-      <div class="certificado-item">
-        <img src="./public/images/backgound/backgroundHead.jpg" alt="">
-        <h3>Certificado de participacao Hacking</h3>
-        <p>participacao em: 2023</p>
-      </div>
-      <div class="certificado-item">
-        <img src="./public/images/backgound/backgroundHead.jpg" alt="">
-        <h3>Certificado de participacao Hacking</h3>
-        <p>participacao em: 2023</p>
-      </div>
-    </div>
-
-  </div>
-
-</section> -->
 
 
   
@@ -508,7 +507,7 @@
             
           </div>
         </div>
-
+        
         <!-- Texto final -->
         <div class="text-center text-white border-top p-2 border-light">
           <h5>
@@ -518,6 +517,7 @@
         </div>
       </div>
     </footer>
+  </div>
     <script src="./server/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
     <script src="./server/connection.js"></script>

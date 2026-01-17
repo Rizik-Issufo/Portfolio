@@ -67,3 +67,20 @@ async function commentsSent(comment) {
 
       }
 }
+
+
+// loading 
+let imagesloaded = 0;
+const totalImages = document.images.length;
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    const contentScreen = document.getElementById('content');
+    Array.from(document.images).forEach(imagem)=> {
+        imagesloaded++;
+        if (imagesloaded === totalImages) {
+            loadingScreen.style.display = 'none';
+            contentScreen.style.display = 'block';
+        }
+    }
+})
